@@ -10,5 +10,9 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
+html
+  font-size: 50px
+  body
+    font-size: 16px
 </style>
