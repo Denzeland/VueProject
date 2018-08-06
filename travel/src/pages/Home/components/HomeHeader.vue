@@ -1,8 +1,14 @@
 <template>
     <div class="header">
-        <div class="header-left">返回</div>
-        <div class="header-input">内容</div>
-        <div class="header-right">城市</div>
+        <div class="header-left">
+            <span class="iconfont icon-jiantou3"></span>
+        </div>
+        <div class="header-input">
+            <span class="iconfont icon-search"></span>
+            输入城市/景点/游玩主题</div>
+        <div class="header-right">城市
+            <span class="iconfont icon-jiantou"></span>
+        </div>
     </div>
 </template>
 
@@ -13,13 +19,33 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+    @import '~styles/varibles.styl'
     .header
-        height: .86rem
         display: flex
-        background: #00bcd4
+        line-height: .86rem
+        background: $bgcolor
         color: #ffffff
         .header-left
             width: .64rem
             float: left
+            .icon-jiantou3
+                text-align: center
+                font-size: .4rem
+        .header-input
+            flex: 1
+            height: .64rem
+            line-height: .64rem
+            margin-top: .12rem
+            margin-left: .2rem
+            padding-left: .2rem
+            background: #ffffff
+            border-radius: .1rem
+            color: #eee
+        .header-right
+            width: 1.24rem
+            float: right
+            text-align:center
+            .icon-jiantou
+                font-size : .24rem
 
 </style>
