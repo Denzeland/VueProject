@@ -14,5 +14,5 @@ export default {
 html
   font-size: 50px
   body
-    font-size: 16px
+    font-size: 15px
 </style>
