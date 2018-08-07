@@ -16,10 +16,7 @@ export default {
         return {
             swiperOption: {
                 loop: true,
-                pagination: {
-                    el: '.swiper-pagination'
-                },
-                swiperSlides: [1, 2, 3, 4, 5]
+                pagination: '.swiper-pagination'
             },
             swiperList: [{
                 id: 1001,
@@ -46,6 +43,8 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+    .swiper-wrap >>> .swiper-pagination-bullet-active
+        background #fff !important
     .swiper-wrap
         overflow hidden
         width: 100%
