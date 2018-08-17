@@ -2,7 +2,7 @@
     <div>
       <div class="title">周末去哪</div>  
       <ul class="recommend-wrap">
-          <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+          <li class="item border-bottom" v-for="item of weekendList" :key="item.id">
             <div class="item-img-wrap">
                 <img :src="item.imgurl" alt="" class="item-img">
             </div>
@@ -20,7 +20,7 @@ export default {
     name: 'HomeWeekend',
     data() {
         return {
-            recommendList: [{
+            weekendList: [{
                 id: '0001',
                 imgurl: 'http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg',
                 title: '大连海洋世界',
