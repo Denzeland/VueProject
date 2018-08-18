@@ -2,7 +2,7 @@
     <div>
       <div class="title">周末去哪</div>  
       <ul class="recommend-wrap">
-          <li class="item border-bottom" v-for="item of weekendList" :key="item.id">
+          <li class="item border-bottom" v-for="item of list" :key="item.id">
             <div class="item-img-wrap">
                 <img :src="item.imgurl" alt="" class="item-img">
             </div>
@@ -18,30 +18,8 @@
 <script>
 export default {
     name: 'HomeWeekend',
-    data() {
-        return {
-            weekendList: [{
-                id: '0001',
-                imgurl: 'http://img1.qunarzz.com/sight/source/1602/88/bf120edeaea383.jpg_r_640x214_f8591f7b.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            },{
-                id: '0002',
-                imgurl: 'http://img1.qunarzz.com/sight/source/1505/eb/e4b181a6957c36.jpg_r_640x214_4abbdbc0.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            },{
-                id: '0003',
-                imgurl: 'http://img1.qunarzz.com/sight/source/1507/d9/2ddc7652fdba16.jpg_r_640x214_5e62f1a3.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            },{
-                id: '0004',
-                imgurl: 'http://img1.qunarzz.com/sight/source/1505/69/e899202f7abddf.jpg_r_640x214_81b6b528.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            }]
-        }
+    props: {
+        list: Array
     }
 }
 </script>
@@ -55,7 +33,7 @@ export default {
         text-indent .2rem
     .item-img-wrap
         height 0
-        padding-bottom 33.9%
+        padding-bottom 37.09%
         overflow hidden
         .item-img
             width 100%

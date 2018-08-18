@@ -2,7 +2,7 @@
     <div>
       <div class="title">热销推荐</div>  
       <ul class="recommend-wrap">
-          <li class="item border-bottom" v-for="item of recommendList" :key="item.id">
+          <li class="item border-bottom" v-for="item of list" :key="item.id">
             <img :src="item.imgurl" alt="" class="item-img">
               <div class="item-info">
                   <p class="item-title">{{item.title}}</p>
@@ -17,30 +17,8 @@
 <script>
 export default {
     name: 'HomeRecommend',
-    data() {
-        return {
-            recommendList: [{
-                id: '0001',
-                imgurl: 'http://img1.qunarzz.com/sight/p0/1502/15/15ca1d0eab6bf46c.water.jpg_200x200_50ca7bb1.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            },{
-                id: '0002',
-                imgurl: 'http://img1.qunarzz.com/sight/p0/1502/15/15ca1d0eab6bf46c.water.jpg_200x200_50ca7bb1.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            },{
-                id: '0003',
-                imgurl: 'http://img1.qunarzz.com/sight/p0/1502/15/15ca1d0eab6bf46c.water.jpg_200x200_50ca7bb1.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            },{
-                id: '0004',
-                imgurl: 'http://img1.qunarzz.com/sight/p0/1502/15/15ca1d0eab6bf46c.water.jpg_200x200_50ca7bb1.jpg',
-                title: '大连海洋世界',
-                desc: '华侨城水上乐园，旅游的好去处，浪漫胜地'
-            }]
-        }
+    props:{
+        list: Array
     }
 }
 </script>
