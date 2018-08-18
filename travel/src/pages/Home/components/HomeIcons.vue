@@ -73,7 +73,7 @@ export default {
                 position absolute
                 left 0
                 right 0
-                bottom -5px
+                bottom 2px
                 height .44rem
                 line-height .44rem
                 color $darkcolor
